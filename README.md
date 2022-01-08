@@ -63,4 +63,7 @@ An algorithm is defined as a set of rules or a step-by-step procedure that are t
     2. Progressive approach – The recursive calls should consist of a progressive approach. Whenever a recursive call is made to the function, it should be reaching near the base condition.
 
 
+<b>NOTE : </b> Recursion is neither space efficient nor time efficient. 
+
+
 
