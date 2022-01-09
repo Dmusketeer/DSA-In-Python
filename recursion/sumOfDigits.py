@@ -8,7 +8,6 @@
 
 # so f(n) = n%10 + f(n/10)
 
-
 def sumOfDigits(n):
     assert n<=0 and int(n)==n , "The Number has to be a positive integer only"
     if n==0:
