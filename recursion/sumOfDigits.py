@@ -10,20 +10,26 @@
 
 
 def sumOfDigits(n):
+    assert n<=0 and int(n)==n , "The Number has to be a positive integer only"
     if n==0:
         return 0
     else:
-        return n%10 + sumOfDigits(n//10)
+        return int(n%10) + sumOfDigits(int(n//10))
 
 # test cases:
 print(sumOfDigits(4))
-print(sumOfDigits(10))
 print(sumOfDigits(19))
 print(sumOfDigits(20))
 print(sumOfDigits(100))
 print(sumOfDigits(110))
 print(sumOfDigits(1000))
 print(sumOfDigits(1999))
+
+print(sumOfDigits(-1999))
+print(sumOfDigits(-11))
+
+
+
 
 
 
