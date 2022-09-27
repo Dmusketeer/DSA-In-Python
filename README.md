@@ -1,6 +1,5 @@
 # DSA-In-Python
 
-
 -----------------------------------
 ## <b> Module-1 </b>
 -----------------------------------
@@ -30,8 +29,6 @@ Elements in non-linear data structures are not in any sequence. Instead they are
 ## Why Data Structure?
 Knowledge about data structures help you understand the working of each data structure. And, based on that you can select the right data structures for your project.
 
-
-
 ## What is an Algorithms?
 An algorithm is defined as a set of rules or a step-by-step procedure that are to be executed in a specific order to get the desired output.
 
@@ -46,8 +43,6 @@ An algorithm is defined as a set of rules or a step-by-step procedure that are t
 - Dynamic programming algorithm
 - Randomised algorithm
 
-
-
 ------------------------------------------------
 ## <b>Module-2 </b>
 ------------------------------------------------
@@ -61,7 +56,6 @@ An algorithm is defined as a set of rules or a step-by-step procedure that are t
 
     1. Base criteria – There has to be one predefined base condition. Whenever this base criterion is fulfilled, the function will stop calling itself.
     2. Progressive approach – The recursive calls should consist of a progressive approach. Whenever a recursive call is made to the function, it should be reaching near the base condition.
-
 
 <b>NOTE : </b> Recursion is neither space efficient nor time efficient. 
 
