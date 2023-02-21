@@ -139,8 +139,6 @@ Sliced_array = a[:]
 ## Updating Elements in a Array
 - In order to update an element in the array we simply reassign a new value to the desired index we want to update.
 ```py
-
-
 # importing array module
 import array
  
@@ -155,13 +153,4 @@ arr[4] = 8
 
 # Time Complexity: O(n)
 # Auxiliary Space: O(1)
-
 ```
-
-
-
-
-
-
-
-
