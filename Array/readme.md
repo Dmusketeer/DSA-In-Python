@@ -83,4 +83,85 @@ a = arr.array('i', [1, 2, 3, 4, 5, 6])
  
 # accessing element of array
 print("Access element is: ", a[0])
+
+# Time Complexity: O(1)
+
+# Auxiliary Space: O(1)
 ```
+
+## Removing Elements from the Array
+- Elements can be removed from the array by using built-in remove() function but an Error arises if element doesn’t exist in the set. Remove() method only removes one element at a time, to remove range of elements, iterator is used.
+- pop() function can also be used to remove and return an element from the array, but by default it removes only the last element of the array, to remove element from a specific position of the array, index of the element is passed as an argument to the pop() method.
+- Note – Remove method in List will only remove the first occurrence of the searched element. 
+
+```py
+  
+# importing "array" for array operations
+import array
+  
+# initializing array with array values
+# initializes array with signed integers
+arr = array.array('i', [1, 2, 3, 1, 5])
+print (arr.pop(2))
+# using remove() to remove 1st occurrence of 1
+arr.remove(1)
+
+```
+
+
+## Slicing of a Array
+- Slice operation is performed on array with the use of colon(:). 
+- To print elements from beginning to a range use [:Index], to print elements from end use [:-Index],
+- To print elements from specific Index till the end use [Index:], 
+- To print elements within a range, use [Start Index:End Index] and to print whole List with the use of slicing operation, use [:]. 
+- Further, to print whole array in reverse order, use [::-1]. 
+
+```py
+ 
+# importing array module
+import array as arr
+ 
+# creating a list
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ 
+a = arr.array('i', l)
+
+# using Slice operation
+Sliced_array = a[3:8]
+
+# pre-defined point to end
+Sliced_array = a[5:]
+
+# beginning till end
+Sliced_array = a[:]
+```
+
+## Updating Elements in a Array
+- In order to update an element in the array we simply reassign a new value to the desired index we want to update.
+```py
+
+
+# importing array module
+import array
+ 
+# initializing array with array values
+# initializes array with signed integers
+arr = array.array('i', [1, 2, 3, 1, 2, 5])
+# updating a element in a array
+arr[2] = 6
+ 
+# updating a element in a array
+arr[4] = 8
+
+# Time Complexity: O(n)
+# Auxiliary Space: O(1)
+
+```
+
+
+
+
+
+
+
+
