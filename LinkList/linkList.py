@@ -26,7 +26,35 @@ class LinkedList:
             itr = itr.next
         itr.next = Node(data, None)
 
-    def print(self):
+    def insert_values(self, data_list):
+        self.head = None
+        for data in data_list:
+            self.insert_at_end(data)
+
+    def get_length(self):
+        count = 0
+        itr = self.head
+        while itr:
+            count += 1
+            itr = itr.next
+        return count
+
+    def remove_at(self, index):
+        if index < 0 or index > self.get_length()-1:
+            raise Exception("This is not a valid index")
+        if index == 0:
+            self.head = self.head.next
+            return
+        count = 0
+        itr = self.head
+        while itr:
+            if count == index-1:
+                itr.next = itr.next.next
+                break
+            itr = itr.next
+            count += 1
+
+    def printList(self):
         if self.head is None:
             print("Linked list is empty")
             return
@@ -40,9 +68,9 @@ class LinkedList:
 
 if __name__ == '__main__':
     ll = LinkedList()
-    ll.insert_at_begining(12)
-    ll.insert_at_begining(24)
-    ll.insert_at_begining(34)
-    ll.insert_at_end(7)
-    ll.insert_at_begining(43)
-    ll.print()
+    ll.insert_values(["jhoe", "biden", "ryan", "jane"])
+    ll.printList()
+    ll.remove_at(2)
+    ll.printList()
+    ll.remove_at(20)
+    print("length:", ll.get_length())
